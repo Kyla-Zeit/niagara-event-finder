@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  :root {
+    --background: 250 25% 8%;
+    --foreground: 0 0% 96%;
+
+    --card: 250 20% 12%;
+    --card-foreground: 0 0% 96%;
+
+    --popover: 250 20% 12%;
+    --popover-foreground: 0 0% 96%;
+
+    --primary: 265 85% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 250 20% 18%;
+    --secondary-foreground: 0 0% 90%;
+
+    --muted: 250 15% 16%;
+    --muted-foreground: 250 10% 55%;
+
+    --accent: 265 85% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 250 15% 20%;
+    --input: 250 15% 20%;
+    --ring: 265 85% 60%;
+
+    --radius: 1rem;
+
+    --sidebar-background: 250 25% 8%;
+    --sidebar-foreground: 0 0% 96%;
+    --sidebar-primary: 265 85% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 250 20% 18%;
+    --sidebar-accent-foreground: 0 0% 96%;
+    --sidebar-border: 250 15% 20%;
+    --sidebar-ring: 265 85% 60%;
+
+    --glass: 250 20% 15%;
+    --glass-border: 250 15% 25%;
+    --nav-bg: 250 25% 6%;
+  }
+
+  .dark {
+    --background: 250 25% 8%;
+    --foreground: 0 0% 96%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk', sans-serif;
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    background: hsl(var(--card) / 0.8);
+    backdrop-filter: blur(20px);
+    border: 1px solid hsl(var(--glass-border));
+    border-radius: 1rem;
+  }
+
+  .gradient-primary {
+    background: linear-gradient(135deg, hsl(265 85% 60%), hsl(280 90% 50%));
+  }
+
+  .text-gradient {
+    background: linear-gradient(135deg, hsl(265 85% 60%), hsl(280 90% 50%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .safe-bottom {
+    padding-bottom: env(safe-area-inset-bottom, 0.5rem);
+  }
+
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
