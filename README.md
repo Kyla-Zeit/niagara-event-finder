@@ -37,8 +37,8 @@ cd backend
 ./mvnw spring-boot:run
 ```
 ---
-### 1) Start the frontend (Vite)
-cd frontend
+### 2) Start the frontend (Vite)
+```cd frontend
 npm install
 npm run dev
-
+```
