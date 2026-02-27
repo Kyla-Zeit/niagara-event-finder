@@ -45,6 +45,6 @@ npm run dev
 - USER NAME: sa
 - Password: (blank)
 
-```bash
+```sql
 SELECT * FROM APP_USER;
 ```
