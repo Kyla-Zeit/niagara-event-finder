@@ -41,8 +41,9 @@ npm run dev
 ---
 ## H2 Console (Dev)
 - URL: http://localhost:8081/h2-console
-- JDBC URL is configured in the backend config (file-based DB for local dev).
-- Default user is typically sa with blank password unless you changed it.
+- JDBC URL: jdbc:h2:file:./data/niagara_auth_db
+- USER NAME: sa
+- Password: (blank)
 
 ```bash
 SELECT * FROM APP_USER;
