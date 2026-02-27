@@ -33,6 +33,8 @@ cd backend
 ```
 ---
 ### 2) Start the frontend (Vite)
+Open a second terminal in the repo root:
+
 ```bash
 cd frontend
 npm install
