@@ -12,6 +12,6 @@ backend/**/*.mv.db
 backend/**/*.trace.db
 backend/**/*.lock.db
 
-# OS / editor
+# OS/editor
 .DS_Store
 .vscode/
