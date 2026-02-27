@@ -38,7 +38,8 @@ cd backend
 ```
 ---
 ### 2) Start the frontend (Vite)
-```cd frontend
+```bash
+cd frontend
 npm install
 npm run dev
 ```
