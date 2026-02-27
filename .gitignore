@@ -15,3 +15,8 @@ backend/**/*.lock.db
 # OS/editor
 .DS_Store
 .vscode/
+
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+frontend/.vite/
