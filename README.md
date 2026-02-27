@@ -34,9 +34,11 @@ Open a terminal in the repo root:
 
 ```bash
 cd backend
-./mvnw spring-boot:run ```
+./mvnw spring-boot:run
+```
 
 ### 1) Start the frontend (Vite)
 cd frontend
 npm install
 npm run dev
+
