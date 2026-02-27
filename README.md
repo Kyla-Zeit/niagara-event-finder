@@ -9,11 +9,6 @@ Includes simple user authentication backed by an H2 database (with H2 Console en
 - **Database:** H2 (file-based for local dev)
 - **Dev tooling:** Maven Wrapper, npm
 
-## Project Structure
-niagara-event-finder/
-frontend/ # React/Vite app
-backend/ # Spring Boot app
-
 ## Prerequisites
 - **Node.js** (LTS recommended)
 - **npm**
